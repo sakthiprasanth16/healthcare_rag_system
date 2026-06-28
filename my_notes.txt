@@ -1,0 +1,181 @@
+python -m streamlit run frontend/streamlit_app.py
+👩 Patient 1 — Priya Sharma (Diabetes)
+📄 Blood Sugar Report Questions
+What is Priya's HbA1c level and is it normal?
+
+What does a fasting blood glucose of 142 mg/dL indicate?
+
+What is her eGFR value and what stage of kidney disease does it suggest?
+
+Why is microalbumin elevated and what does it mean?
+
+Which values are marked as HIGH in her blood report?
+
+📄 Prescription Questions
+What medicines were prescribed to Priya?
+
+Why was Losartan prescribed — is it for BP or kidneys?
+
+What is the dosage and frequency of Metformin?
+
+How long should she take Empagliflozin?
+
+What foods should Priya strictly avoid?
+
+📄 Eye Screening Report Questions
+Does Priya have diabetic retinopathy?
+
+Which eye is affected and what is the severity grade?
+
+Does she need laser treatment right now?
+
+When should she repeat the eye examination?
+
+What is her visual acuity in both eyes?
+
+🔗 Combined Questions (all 3 docs)
+Based on all her reports, what is the most serious condition Priya is currently facing?
+
+Which medicines in the prescription are specifically meant to protect her kidneys?
+
+Is her eye condition directly related to her diabetes — what does the blood report confirm?
+
+What lifestyle changes should Priya make based on all three documents together?
+
+List all follow-up tests and appointments mentioned across all her reports.
+
+👨 Patient 2 — Rahul Verma (Thyroid + Hypertension)
+📄 Thyroid Report Questions
+What type of thyroid condition does Rahul have?
+
+Is his TSH high or low and what does that mean for the body?
+
+What are Anti-TPO antibodies and why are they elevated?
+
+Why is his cholesterol high — is it related to his thyroid?
+
+What is Hashimoto's Thyroiditis in simple terms?
+
+📄 Prescription Questions
+How and when exactly should Rahul take Levothyroxine?
+
+Which medicines were prescribed for his blood pressure?
+
+Can he take calcium tablets along with Levothyroxine at the same time?
+
+What foods should he avoid for better thyroid health?
+
+When should he repeat the thyroid blood test?
+
+📄 Discharge Summary Questions
+Why was Rahul admitted to the hospital?
+
+What was his blood pressure at the time of admission?
+
+What did the thyroid ultrasound report show?
+
+Why did Rahul have a slow heart rate (bradycardia) of 52 bpm?
+
+What is hyponatraemia and why did Rahul develop it?
+
+🔗 Combined Questions (all 3 docs)
+What caused Rahul's high cholesterol — is it caused by his thyroid condition?
+
+Based on all reports, which is more dangerous — his thyroid or his blood pressure?
+
+What emergency treatment was given in the hospital and what is he taking at home now?
+
+What is the connection between Hashimoto's Thyroiditis and his slow heart rate?
+
+Summarise all the medical conditions Rahul has been diagnosed with across all documents.
+
+👩 Patient 3 — Kavitha Nair (Post-Surgery)
+📄 Surgery Notes Questions
+What surgery was performed on Kavitha and why was it needed?
+
+How many gallstones were found and what was the largest size?
+
+Was there any significant bleeding during the surgery?
+
+What was the condition of the gallbladder when the surgeon opened it?
+
+How long did the entire surgery take?
+
+📄 Discharge Summary Questions
+How many days was Kavitha hospitalised in total?
+
+What medicines were given to her at the time of discharge?
+
+What diet must she follow after the surgery?
+
+What warning signs should she watch out for at home?
+
+When is her suture removal appointment?
+
+📄 Histopathology Report Questions
+Was cancer found in the removed gallbladder?
+
+What is the final histological diagnosis of the specimen?
+
+What was the size of the gallbladder that was removed?
+
+What does "acute on chronic cholecystitis" mean in simple terms?
+
+Does Kavitha need any cancer follow-up visits in the future?
+
+🔗 Combined Questions (all 3 docs)
+Was the surgery completely successful — what do all three reports confirm?
+
+What is the full recovery timeline based on the surgery notes and discharge summary?
+
+Based on all reports, does Kavitha need further treatment or is she fully cured?
+
+List all medications Kavitha received — from surgery day to discharge.
+
+What is the next follow-up date and which report needs to be reviewed at that visit?
+
+👨 Patient 4 — Mohammed Farouk (Cardiac)
+📄 ECG + Echo Report Questions
+What does an ejection fraction (EF) of 44% mean — is it dangerous?
+
+What did the ECG show in leads V4 to V6?
+
+What is LV hypertrophy and why does Farouk have it?
+
+Does he have any heart valve problem according to the echo?
+
+What urgent test was recommended after the echocardiography?
+
+📄 Cardiac Blood Tests Questions
+Is the Troponin I level of 0.08 ng/mL dangerous?
+
+What does a very high NT-proBNP value of 1840 pg/mL indicate?
+
+Why is low potassium of 3.4 mEq/L dangerous for a heart patient?
+
+What does elevated hs-CRP mean for his overall cardiac risk?
+
+Which values in the blood test are the most urgent to treat immediately?
+
+📄 Cardiology Prescription Questions
+Why was he prescribed both Ecosprin and Clopidogrel together?
+
+What is Ramipril used for in heart failure patients?
+
+Why was Furosemide prescribed — what problem does it address?
+
+What is the daily fluid restriction for Farouk?
+
+What should he do immediately if chest pain or breathlessness occurs?
+
+🔗 Combined Questions (all 3 docs)
+Based on all three reports, is Farouk having a heart attack or something else?
+
+What is the single most critical finding across all his cardiac documents?
+
+Which medicines in the prescription directly address the abnormal values found in the blood test?
+
+Based on ECG, echo, and blood tests combined — how serious is his heart condition overall?
+
+What are all the urgent tests ordered and why is each one specifically needed?
+

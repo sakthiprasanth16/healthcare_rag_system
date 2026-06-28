@@ -1,0 +1,27 @@
+# Web Framework
+fastapi
+uvicorn[standard]
+
+# Frontend
+streamlit
+
+# PDF Processing
+pypdf
+
+# Embeddings
+sentence-transformers
+
+# Vector Database
+pinecone
+
+# LLM
+google-generativeai
+
+# Database
+pymongo
+
+# Utilities
+python-dotenv
+python-multipart
+requests
+numpy
