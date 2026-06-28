@@ -197,7 +197,7 @@ BACKEND_URL=http://localhost:8000
 ### Step 5 — Run the backend
 
 ```bash
-uvicorn backend.main:app --reload --port 8000
+uvicorn backend.main:app --reload
 ```
 
 You should see: `Uvicorn running on http://127.0.0.1:8000`
