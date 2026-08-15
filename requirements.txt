@@ -8,8 +8,8 @@ streamlit
 # PDF Processing
 pypdf
 
-# Embeddings
-sentence-transformers
+# Embeddings (via Hugging Face Inference API — no local model/torch)
+huggingface_hub
 
 # Vector Database
 pinecone
