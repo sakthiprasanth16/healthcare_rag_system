@@ -13,7 +13,13 @@ A **Patient Medical Record Assistant** that lets you upload medical PDFs and ask
 | **Frontend (Streamlit)** | [https://healthcare-rag-frontend.onrender.com](https://healthcare-rag-frontend.onrender.com) |
 | **Backend (FastAPI)** | [https://healthcare-rag-system-8hhy.onrender.com](https://healthcare-rag-system-8hhy.onrender.com) |
 
-> Both services are deployed on **Render** using Docker. Free-tier services sleep after inactivity — the first request after idle time can take 30–60 seconds while it wakes up.
+> Both services are deployed on **Render** using Docker. Free-tier services sleep after ~15 minutes of inactivity.
+>
+> **⚠️ To use the live demo:**
+> 1. Open the **backend URL** first and wait for it to load (`{"status": "ok", ...}`). This wakes it up — can take 30–60 seconds on a cold start.
+> 2. Only after the backend responds, open the **frontend URL**.
+>
+> If you open the frontend first while the backend is still asleep, uploads/chat requests will time out or fail silently since the frontend has nothing to wake the backend on its own.
 
 ---
 
@@ -261,6 +267,8 @@ Both backend and frontend are deployed as **separate Docker web services** on Re
 6. Deploy, then open the frontend's Render URL to use the app.
 
 > **Why embeddings run via Hugging Face's Inference API instead of a local model:** loading PubMedBERT locally via `sentence-transformers` + `torch` exceeded Render's 512MB free-tier RAM limit (`exit code 137`, OOM kill). Routing embedding calls to HF's hosted `feature-extraction` endpoint removes `torch`/`sentence-transformers` from the backend entirely — same model (`NeuML/pubmedbert-base-embeddings`), same 768-dim output, but a fraction of the memory footprint.
+
+> **Free-tier sleep behavior:** Render's free plan spins down web services after ~15 minutes with no traffic. Since the frontend depends on the backend, always **wake the backend first** (open its URL, confirm it responds) **before** opening the frontend — otherwise the first upload/chat request from the frontend will hit a sleeping backend and time out.
 
 ---
 
