@@ -21,7 +21,7 @@ class Config:
     EMBEDDING_DIMENSION = 768
 
     # LLM — configurable via .env, defaults to stable model
-    LLM_MODEL = os.getenv("LLM_MODEL", "gemini-2.5-flash-lite")
+    LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
 
     # Chunking — optimized for medical PDFs
     CHUNK_SIZE = 1000
