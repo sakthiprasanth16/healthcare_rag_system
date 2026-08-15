@@ -7,6 +7,7 @@ class Config:
     # API Keys
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
     PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+    HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
     # Pinecone Settings
     PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME", "healthcare-rag")
@@ -15,7 +16,7 @@ class Config:
     MONGO_URI = os.getenv("MONGO_URI")
     MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "healthcare_rag")
 
-    # Embedding Model
+    # Embedding Model — served via HF Inference API, not loaded locally
     EMBEDDING_MODEL = "NeuML/pubmedbert-base-embeddings"
     EMBEDDING_DIMENSION = 768
 
